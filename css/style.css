@@ -1,0 +1,175 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  color: #454545;
+}
+
+body {
+  background-color: #e1f4ff;
+}
+
+.card {
+  width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 20px #f0f0f0;
+  border-radius: 12px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav a {
+  padding: 4px 6px;
+  border-radius: 4px;
+  transition: 0.4s;
+}
+nav a i {
+  color: #a0a0a0;
+}
+nav a:hover {
+  background-color: #f4f5f6;
+}
+/* profile */
+.profile {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.profile .img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 20px #c5e0ff;
+}
+.profile .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.4s;
+}
+.profile .img:hover img {
+  transform: scale(1.05);
+}
+.profile .desc {
+  text-align: center;
+}
+.profile .desc p {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: "Noto Serif", serif;
+}
+.profile .desc span {
+  font-size: 14px;
+  color: #a0a0a0;
+}
+.profile button {
+  padding: 12px 36px;
+  border: none;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #f0f0f0;
+  background-color: #4f9bff;
+  box-shadow: 0 0 10px #d4eaff;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.profile button:hover {
+  background-color: #3a88ee;
+}
+/* link */
+.link {
+  margin: 30px 0;
+}
+.link li {
+  width: fit-content;
+  margin: auto;
+  padding: 5px;
+}
+.link li i {
+  color: #c0c0c0;
+}
+.link li span {
+  color: #c0c0c0;
+  font-size: 14px;
+  margin-left: 10px;
+}
+.link li:first-child {
+  border-bottom: 1px solid #cdd1d5;
+}
+/* color button */
+.color-btn {
+  margin: 40px 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.color-btn li {
+  width: 30px;
+  height: 30px;
+  background-color: #ddd;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.color-btn li:hover {
+  transform: translateY(-2px);
+}
+.color-btn li:nth-child(1) {
+  background-color: #4f9bff;
+}
+.color-btn li:nth-child(2) {
+  background-color: #62f34a;
+}
+.color-btn li:nth-child(3) {
+  background-color: #da97f9;
+}
+.color-btn li:nth-child(4) {
+  background-color: #7755f3;
+}
+.card {
+  display: none;
+}
+.card.second .profile button {
+  background-color: #4ec739;
+  box-shadow: 0 0 10px #d1ffc9;
+}
+.card.second .profile button:hover {
+  background-color: #3aa826;
+}
+.card.second .profile .img {
+  box-shadow: 0 0 10px #efffec;
+}
+.card.third .profile button {
+  background-color: #c66df0;
+  box-shadow: 0 0 10px #f0cfff;
+}
+.card.third .profile button:hover {
+  background-color: #a74dd1;
+}
+.card.third .profile .img {
+  box-shadow: 0 0 10px #f5deff;
+}
+.card.fourth .profile button {
+  background-color: #734cdf;
+  box-shadow: 0 0 10px #d3c7ff;
+}
+.card.fourth .profile button:hover {
+  background-color: #5e39c4;
+}
+.card.fourth .profile .img {
+  box-shadow: 0 0 10px #ddd3ff;
+}

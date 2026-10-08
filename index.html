@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Profile Card</title>
+    <script>
+      $(document).ready(function () {
+        $(".card").eq(0).show();
+        $(".color-btn li").click(function () {
+          let idx = $(this).index();
+          console.log(idx);
+          $(".card").hide().eq(idx).show();
+          if (idx == 0) {
+            $("body").css("background-color", "#e1f4ff");
+            $(".card").removeClass("second third fourth");
+          } else if (idx == 1) {
+            $("body").css("background-color", "#f9fff6");
+            $(".card").addClass("second").removeClass("third fourth");
+          } else if (idx == 2) {
+            $("body").css("background-color", "#fcf2ff");
+            $(".card").addClass("third").removeClass("second fourth");
+          } else if (idx == 3) {
+            $("body").css("background-color", "#e9ecff");
+            $(".card").addClass("fourth").removeClass("second third");
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <section class="card">
+      <nav class="menu">
+        <a href="#">
+          <i class="fa-solid fa-bars"></i>
+        </a>
+        <a href="#"><i class="fa-regular fa-note-sticky"></i></a>
+      </nav>
+      <div class="profile">
+        <div class="img">
+          <img src="images/member1.jpg" alt="profile" />
+        </div>
+        <div class="desc">
+          <p>Member01</p>
+          <span>UI/UX INTERRACTIVE DEVELOPER</span>
+        </div>
+        <a href="#">
+          <button>View More</button>
+        </a>
+      </div>
+      <ul class="link">
+        <li>
+          <i class="fa-brands fa-square-facebook"></i
+          ><span>Visit My Facebook page.</span>
+        </li>
+        <li>
+          <i class="fa-solid fa-envelope"></i><span>example@example.com</span>
+        </li>
+      </ul>
+      <ul class="color-btn">
+        <li class=""></li>
+        <li class=""></li>
+        <li class=""></li>
+        <li class=""></li>
+      </ul>
+    </section>
+    <section class="card">
+      <nav class="menu">
+        <a href="#">
+          <i class="fa-solid fa-bars"></i>
+        </a>
+        <a href="#"><i class="fa-regular fa-note-sticky"></i></a>
+      </nav>
+      <div class="profile">
+        <div class="img">
+          <img src="images/member2.jpg" alt="profile" />
+        </div>
+        <div class="desc">
+          <p>Member02</p>
+          <span>FRONTEND DEVELOPER</span>
+        </div>
+        <a href="#">
+          <button>View More</button>
+        </a>
+      </div>
+      <ul class="link">
+        <li>
+          <i class="fa-brands fa-square-facebook"></i
+          ><span>Visit My Facebook page.</span>
+        </li>
+        <li>
+          <i class="fa-solid fa-envelope"></i><span>example@example.com</span>
+        </li>
+      </ul>
+      <ul class="color-btn">
+        <li class=""></li>
+        <li class=""></li>
+        <li class=""></li>
+        <li class=""></li>
+      </ul>
+    </section>
+    <section class="card">
+      <nav class="menu">
+        <a href="#">
+          <i class="fa-solid fa-bars"></i>
+        </a>
+        <a href="#"><i class="fa-regular fa-note-sticky"></i></a>
+      </nav>
+      <div class="profile">
+        <div class="img">
+          <img src="images/member3.jpg" alt="profile" />
+        </div>
+        <div class="desc">
+          <p>Member03</p>
+          <span>BACKEND DEVELOPER</span>
+        </div>
+        <a href="#">
+          <button>View More</button>
+        </a>
+      </div>
+      <ul class="link">
+        <li>
+          <i class="fa-brands fa-square-facebook"></i
+          ><span>Visit My Facebook page.</span>
+        </li>
+        <li>
+          <i class="fa-solid fa-envelope"></i><span>example@example.com</span>
+        </li>
+      </ul>
+      <ul class="color-btn">
+        <li class=""></li>
+        <li class=""></li>
+        <li class=""></li>
+        <li class=""></li>
+      </ul>
+    </section>
+    <section class="card">
+      <nav class="menu">
+        <a href="#">
+          <i class="fa-solid fa-bars"></i>
+        </a>
+        <a href="#"><i class="fa-regular fa-note-sticky"></i></a>
+      </nav>
+      <div class="profile">
+        <div class="img">
+          <img src="images/member4.jpg" alt="profile" />
+        </div>
+        <div class="desc">
+          <p>Member04</p>
+          <span>CONTENTS MARKETER</span>
+        </div>
+        <a href="#">
+          <button>View More</button>
+        </a>
+      </div>
+      <ul class="link">
+        <li>
+          <i class="fa-brands fa-square-facebook"></i
+          ><span>Visit My Facebook page.</span>
+        </li>
+        <li>
+          <i class="fa-solid fa-envelope"></i><span>example@example.com</span>
+        </li>
+      </ul>
+      <ul class="color-btn">
+        <li class=""></li>
+        <li class=""></li>
+        <li class=""></li>
+        <li class=""></li>
+      </ul>
+    </section>
+  </body>
+</html>
